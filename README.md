@@ -8,7 +8,7 @@
 * [Challenge Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge_summary)
 
 ## Project Overview
-The Colorado Election Board has requested assistance with an audit of tabulated votes for a princinct in Colorado.  They have requested a report of the election results.  Total number of votes cast, the total number of votes for each candidate, teh percentage of votes for each candidate, and winner based on the popular vote.
+The Colorado Election Commission has requested assistance with an audit of tabulated votes for a princinct in Colorado.  They have requested a report of the election results.  Total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
 
 ## Resources
 Data Source: election_results.csv
@@ -37,5 +37,6 @@ The analysis of the election show that of the 369,711 votes cast:
   * Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
 
 ## Challenge Overview
+In addition to their original request for the winner based on the popular votes and accounting of the total votes, votes per candidate and percentage of the votes per candidate, the Colorado Election Commission has also requested the voter turnout for each county, the percentage of votes from each county out of the total count, and to identify the county with the highest turnout.
 
 ## Challenge Summary
