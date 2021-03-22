@@ -2,12 +2,12 @@
  <img src="analysis/Election_Results_Terminal.png" width="435" height="300">
 
 ## Table of Contents
-* [PyPoll Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#pypoll_overview)
+* [PyPoll Overview](https://github.com/rkaysen63/Election_Analysis/blob/main/README.md#pypoll-overview)
 * [Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#resources)
 * [Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#summary)
-* [Challenge Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge_overview)
-* [Election Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_results)
-* [Election Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_summary)
+* [PyPoll Challenge Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#PyPoll-Challenge-Overview)
+* [Election Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election-results)
+* [Election Audit Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#Election-Audit-Summary)
 
 ## PyPoll Overview
 The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a precinct in Colorado.  They have requested a report of the election results that include the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
@@ -38,8 +38,13 @@ Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3
 * The winner of the election was:
   * Diana DeGette, who received 73.8% of the popular vote and 272,892 number of votes.
 
-## Challenge Overview
+## PyPoll Challenge Overview
 The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a precinct in Colorado.  They have requested a report of the election results that include the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote. In addition, they have also requested the voter turnout for each county, the percentage of votes from each county out of the total count, and to identify the county with the highest turnout.
+
+## Challenge Resources
+Data Source: ![election_results.csv](https://github.com/rkaysen63/Election_Analysis/blob/main/Resources/election_results.csv)<br/>  
+Software:  Python 3.8.5<br/>
+Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3
 
 ## Election Results
 * The Colorado precinct that was analyzed includes the following counties:
@@ -71,7 +76,7 @@ The Colorado Election Commission has requested assistance with an audit of the t
 
 The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed to the terminal, <img src="analysis/Election_Results_Terminal.png" width="725" height="500">
 
-## Election Summary
+## Election Audit Summary
 
 The results were gathered from data saved in a csv (comma separated value) file using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  There are two exceptions: 1. the path to retrieve the data and 2. the path to store the output text file.  The method to make these minor changes is described below.
 
