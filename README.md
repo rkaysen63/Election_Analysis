@@ -2,7 +2,7 @@
  <img src="analysis/Election_Results_Terminal.png" width="435" height="300">
 
 ## Table of Contents
-* [PyPoll Overviewl](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#pypoll_overview)
+* [PyPoll Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#pypoll_overview)
 * [Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#resources)
 * [Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#summary)
 * [Challenge Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge_overview)
