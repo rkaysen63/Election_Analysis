@@ -76,22 +76,22 @@ Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3 Challenge and starter c
   * Denver County had 306,055 voters turned out to vote, equating  to 82.8% of the precinct's total number of voters.
   * Jefferson County had 38,855 voters turn out to vote, equating  to 10.5% of the precinct's total number of voters.
 
-The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed to the terminal, ![analysis/Election_Results_Terminal.png](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/analysis/Election_Results_Terminal.png).
+The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed to the terminal, ![Election_Results_Terminal.png](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/Election_Results_Terminal.png).
 
 ## Election Audit Summary:
 
-The results were gathered from data in a csv file using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  There are two exceptions: 1. the path to retrieve the data and 2. the path to store the output text file.  The method to make these minor changes is described below.
+The results were gathered from data saved in a csv (comma separated value) file using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  There are two exceptions: 1. the path to retrieve the data and 2. the path to store the output text file.  The method to make these minor changes is described below.
 
 In order to use the program for other precincts:
 1. Update the `file_to_load =` path in order to retrieve a new data file.
    * Per line 9 of PyPoll_Challenge_RK.py code:
    * The current file path to retrieve the data is: `file_to_load = os.path.join("Resources", "election_results.csv")`
-   * Change the path to reflect the actual location of the new code.  This may be done in two ways: either replace the path and file name within the parentheses, or replace the code `os.path.join` with the direct path of the file.  
+   * Change the path to reflect the actual location of the new code.  This may be done in two ways: either replace the path within the parentheses, or replace the code `os.path.join` with the direct path of the file.  
    * To illustrate, please consider the following example file, folder and folder location relative to the program:
      * File name: district1_election_results.csv
      * Folder name:  all_districts
      * Location of folder "all_districts" is up a level in the folder structure from the analysis program.
-   * File Path Example 1, uses `os.path.join`, but replaces the particulars of the path within the parentheses:
+   * File Path Example 1, uses `os.path.join`, but replaces the particulars of the path within the parentheses as follows:
      * `file_to_load = os.path.join("..", "all_districts", "district1_election_results.csv")`
      * The new path indicates to the program to go up a level in the folder structure, select the "all_districts" folder and select "district1_election_results.csv" file from that folder.
    * File Path Example 2, uses the direct path method.
@@ -101,10 +101,10 @@ In order to use the program for other precincts:
      * While the file is selected/highlighted, press the shift key and right click on the file for the drop-down menu.  From the drop-down menu select "copy as path".
      * Paste the path after the equal sign on line 9 of the code.  It should look something like this: `file_to_load = "C:\Users\<user_name>\Documents\all_districts\district1_election_results.csv"`.
      * Then add a second forward slash to each forward slash so that it looks like this: `file_to_load = "C:\\<user_name>\\Documents\\all_districts\\district1_election_results.csv"`.
-2. Change the `file_to_save =` path in order to save the new results in the desired folder and create a new text file with a descriptive name to prevent saving over the existing text file.  
+2. Change the `file_to_save =` path in order to save the new results in the desired folder and create a new text file name in order to prevent saving over the existing text file.  
    * Per line 11 of the PyPoll_Challenge_RK.py code:
    * The current file path to save the text file with the results is: `file_to_save = os.path.join("analysis", "election_results.txt")` 
-   * Similarly, using the procedure described in the examples 1.1 and 1.2 above, change the name of the new text file (and the folder and folder location, if that is different as well).
+   * Change the prefix of the .txt file to a new name. If you want to save it in the same folder as "election_results.txt" you do not need to change the folder, "analysis."  If you want to store it elsewhere, then you will have to give the program directions to find the new folder, using the procedure described in the File Path Examples 1.1 and 1.2 above.
    * For example, for district1_election_results.csv data, name the output file and "join" it to the folder location.  In this example, the new file will be called "district1_results.txt" and it will be saved into the same folder, "analysis", as "election_results.txt".
    * `file_to_save = os.path.join("analysis", "district1_results.txt")` 
    * The new file "district1_results.txt" will be created when the code is executed and placed in the "analysis" folder, which in this case is located in the same folder with the PyPoll_Challenge_RK.py program.  Therefore, there is no need to go up a level or two or into another folder.
