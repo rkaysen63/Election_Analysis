@@ -2,15 +2,14 @@
  <img src="analysis/Election_Results_Terminal.png" width="435" height="300">
 
 ## Table of Contents
-* [Project Overview PyPoll](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#project_overview_pypoll)
+* [PyPoll Overviewl](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#pypoll_overview)
 * [Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#resources)
 * [Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#summary)
-* [Project Overview PyPoll Challenge](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#project_overview_pypoll_challenge)
-* [Challenge Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge_resources)
-* [Election Audit Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_audit_results)
-* [Election Audit Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_audit_summary)
+* [Challenge Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge_overview)
+* [Election Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_results)
+* [Election Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_summary)
 
-## Project Overview PyPoll
+## PyPoll Overview
 The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a precinct in Colorado.  They have requested a report of the election results that include the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
 
 This analysis is the precursor to the challenge assignment and was performed while learning the basics of the Python coding language. 
@@ -39,15 +38,10 @@ Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3
 * The winner of the election was:
   * Diana DeGette, who received 73.8% of the popular vote and 272,892 number of votes.
 
-## Project Overview PyPoll Challenge
+## Challenge Overview
 The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a precinct in Colorado.  They have requested a report of the election results that include the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote. In addition, they have also requested the voter turnout for each county, the percentage of votes from each county out of the total count, and to identify the county with the highest turnout.
 
-## Challenge Resources
-Data Source: ![election_results.csv](https://github.com/rkaysen63/Election_Analysis/blob/main/Resources/election_results.csv)<br>
-Software:  Python 3.8.5<br>
-Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3 Challenge and starter code file PyPoll_Challenge_starter_code.py
-
-## Election Audit Results:
+## Election Results
 * The Colorado precinct that was analyzed includes the following counties:
   * Arapahoe
   * Denver
@@ -75,9 +69,9 @@ Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3 Challenge and starter c
   * Denver County had 306,055 voters turned out to vote, equating  to 82.8% of the precinct's total number of voters.
   * Jefferson County had 38,855 voters turn out to vote, equating  to 10.5% of the precinct's total number of voters.
 
-The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed to the terminal, ![Election_Results_Terminal.png](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/Election_Results_Terminal.png).
+The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed to the terminal, <img src="analysis/Election_Results_Terminal.png" width="725" height="500">
 
-## Election Audit Summary:
+## Election Summary
 
 The results were gathered from data saved in a csv (comma separated value) file using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  There are two exceptions: 1. the path to retrieve the data and 2. the path to store the output text file.  The method to make these minor changes is described below.
 
@@ -103,7 +97,7 @@ In order to use the program for other precincts:
 2. Change the `file_to_save =` path in order to save the new results in the desired folder and create a new text file name in order to prevent saving over the existing text file.  
    * Per line 11 of the PyPoll_Challenge_RK.py code:
    * The current file path to save the text file with the results is: `file_to_save = os.path.join("analysis", "election_results.txt")` 
-   * Change the prefix of the .txt file to a new name. If you want to save it in the same folder as "election_results.txt" you do not need to change the folder, "analysis."  If you want to store it elsewhere, then you will have to give the program directions to find the new folder, using the procedure described in the File Path Examples 1.1 and 1.2 above.
+   * Change the prefix of the .txt file to a new name. If you want to save it in the same folder as "election_results.txt" you do not need to change the folder, "analysis."  If you want to store it elsewhere, then you will have to give the program directions to find the new folder, using the procedure described in the File Path Examples 1.1 or 1.2 above.
    * For example, for district1_election_results.csv data, name the output file and "join" it to the folder location.  In this example, the new file will be called "district1_results.txt" and it will be saved into the same folder, "analysis", as "election_results.txt".
    * `file_to_save = os.path.join("analysis", "district1_results.txt")` 
    * The new file "district1_results.txt" will be created when the code is executed and placed in the "analysis" folder, which in this case is located in the same folder with the PyPoll_Challenge_RK.py program.  Therefore, there is no need to go up a level or two or into another folder.
