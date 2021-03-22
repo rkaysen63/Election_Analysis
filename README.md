@@ -6,6 +6,7 @@
 * [Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#resources)
 * [Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#summary)
 * [PyPoll Challenge Overview](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#PyPoll-Challenge-Overview)
+* [Challenge Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge-resources)
 * [Election Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election-results)
 * [Election Audit Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#Election-Audit-Summary)
 
