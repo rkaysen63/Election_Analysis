@@ -1,6 +1,6 @@
 # An Analysis of the Election Results of a Colorado Precinct
 
-<img src="analysis/Election_Results_Terminal.png" align="center" width="290" height="200" >
+<img src="analysis/Election_Results_Terminal.png" align="center" width="582" height="400" >
 
 ## Table of Contents
 * [Project Overview PyPoll](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#project_overview_pypoll)
@@ -12,7 +12,7 @@
 * [Election Audit Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_audit_summary)
 
 ## Project Overview PyPoll
-The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a princinct in Colorado.  They have requested a report of the election results that include, the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
+The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a precinct in Colorado.  They have requested a report of the election results that include the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
 
 This analysis is the precursor to the challenge assignment and was performed while learning the basics of the Python coding language. 
 
@@ -22,7 +22,7 @@ Software:  Python 3.8.5<br/>
 Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3
 
 ## Summary
-* The Colorado princinct that was analyzed includes the following counties:
+* The Colorado precinct that was analyzed includes the following counties:
   * Arapahoe
   * Denver
   * Jefferson
@@ -41,19 +41,19 @@ Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3
   * Diana DeGette, who received 73.8% of the popular vote and 272,892 number of votes.
 
 ## Project Overview PyPoll Challenge
-The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a princinct in Colorado.  They have requested a report of the election results that include, the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote. In addition, they have also requested the voter turnout for each county, the percentage of votes from each county out of the total count, and to identify the county with the highest turnout.
+The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a precinct in Colorado.  They have requested a report of the election results that include the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote. In addition, they have also requested the voter turnout for each county, the percentage of votes from each county out of the total count, and to identify the county with the highest turnout.
 
 ## Challenge Resources
-Data Source: ![election_results.csv](https://github.com/rkaysen63/Election_Analysis/blob/main/Resources/election_results.csv)
-Software:  Python 3.8.5
+Data Source: ![election_results.csv](https://github.com/rkaysen63/Election_Analysis/blob/main/Resources/election_results.csv)<br>
+Software:  Python 3.8.5<br>
 Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3 Challenge and starter code file PyPoll_Challenge_starter_code.py
 
 ## Election Audit Results:
-The Colorado princinct that was analyzed includes the following counties:
-* Arapahoe
-* Denver
-* Jefferson
-
+* The Colorado precinct that was analyzed includes the following counties:
+  * Arapahoe
+  * Denver
+  * Jefferson
+  
 * The candidates were:
   * Diana DeGette
   * Raymon Anthony Doane
@@ -76,21 +76,21 @@ The Colorado princinct that was analyzed includes the following counties:
   * Denver County had 306,055 voters turned out to vote, equating  to 82.8% of the precinct's total number of voters.
   * Jefferson County had 38,855 voters turn out to vote, equating  to 10.5% of the precinct's total number of voters.
 
-The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed in the terminal, ![analysis/Election_Results_Terminal.png](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/analysis/Election_Results_Terminal.png)
+The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed to the terminal, ![analysis/Election_Results_Terminal.png](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/analysis/Election_Results_Terminal.png).
 
 ## Election Audit Summary:
 
-The results were gathered from the election_data.csv using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  The exceptions are the path to retrieve the data and the path to store the output text file.
+The results were gathered from data in a csv file using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  There are two exceptions: 1. the path to retrieve the data and 2. the path to store the output text file.  The method to make these minor changes is described below.
 
-In order to use the script for other precincts:
+In order to use the program for other precincts:
 1. Update the `file_to_load =` path in order to retrieve a new data file.
    * Per line 9 of PyPoll_Challenge_RK.py code:
    * The current file path to retrieve the data is: `file_to_load = os.path.join("Resources", "election_results.csv")`
-   * Change the path ("Resources", "election_results.csv") to reflect the actual location of the new code.  This may be done in two ways: either replace the path and file name within the parentheses, or replace the code `os.path.join` with the direct path.  
+   * Change the path to reflect the actual location of the new code.  This may be done in two ways: either replace the path and file name within the parentheses, or replace the code `os.path.join` with the direct path of the file.  
    * To illustrate, please consider the following example file, folder and folder location relative to the program:
      * File name: district1_election_results.csv
      * Folder name:  all_districts
-     * Location of folder "all_districts" is up a level in the folder structure from the PyPoll_Challenge_RK.py program.
+     * Location of folder "all_districts" is up a level in the folder structure from the analysis program.
    * File Path Example 1, uses `os.path.join`, but replaces the particulars of the path within the parentheses:
      * `file_to_load = os.path.join("..", "all_districts", "district1_election_results.csv")`
      * The new path indicates to the program to go up a level in the folder structure, select the "all_districts" folder and select "district1_election_results.csv" file from that folder.
@@ -101,13 +101,13 @@ In order to use the script for other precincts:
      * While the file is selected/highlighted, press the shift key and right click on the file for the drop-down menu.  From the drop-down menu select "copy as path".
      * Paste the path after the equal sign on line 9 of the code.  It should look something like this: `file_to_load = "C:\Users\<user_name>\Documents\all_districts\district1_election_results.csv"`.
      * Then add a second forward slash to each forward slash so that it looks like this: `file_to_load = "C:\\<user_name>\\Documents\\all_districts\\district1_election_results.csv"`.
-2. Change the `file_to_save =`path in order to save the new results in the desired folder and create a new text file with a descriptive name to prevent saving over the existing text file.  
+2. Change the `file_to_save =` path in order to save the new results in the desired folder and create a new text file with a descriptive name to prevent saving over the existing text file.  
    * Per line 11 of the PyPoll_Challenge_RK.py code:
    * The current file path to save the text file with the results is: `file_to_save = os.path.join("analysis", "election_results.txt")` 
-   * Similarly, using the procedure described in the examples 1.1 and 1.2 above, change the name of the new text file (and the folder and folder location as well).
-   * For example, for district1_election_results.csv data, perhaps the file path might be:
+   * Similarly, using the procedure described in the examples 1.1 and 1.2 above, change the name of the new text file (and the folder and folder location, if that is different as well).
+   * For example, for district1_election_results.csv data, name the output file and "join" it to the folder location.  In this example, the new file will be called "district1_results.txt" and it will be saved into the same folder, "analysis", as "election_results.txt".
    * `file_to_save = os.path.join("analysis", "district1_results.txt")` 
-   * The new file "district1_results.txt" would be created when the code is executed and placed in the "analysis" folder, which in this case is located in the same folder with the PyPoll_Challenge_RK.py program.
+   * The new file "district1_results.txt" will be created when the code is executed and placed in the "analysis" folder, which in this case is located in the same folder with the PyPoll_Challenge_RK.py program.  Therefore, there is no need to go up a level or two or into another folder.
 
 
 
