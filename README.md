@@ -1,50 +1,54 @@
 # An Analysis of the Election Results of a Colorado Precinct
 
+<img align="center" width="75" height="50" ![alt text](analysis/Election_Results_Terminal.png)>
+
 ## Table of Contents
 * [Project Overview PyPoll](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#project_overview_pypoll)
 * [Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#resources)
 * [Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#summary)
 * [Project Overview PyPoll Challenge](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#project_overview_pypoll_challenge)
 * [Challenge Resources](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#challenge_resources)
-* [Election-Audit Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election-audit_results)
-* [Election-Audit Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election-audit_summary)
+* [Election Audit Results](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_audit_results)
+* [Election Audit Summary](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#election_audit_summary)
 
 ## Project Overview PyPoll
-This is an analysis of the precursor to the challenge assignment.  The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a princinct in Colorado.  They have requested a report of the election results that include, the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
+The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a princinct in Colorado.  They have requested a report of the election results that include, the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote.
+
+This analysis is the precursor to the challenge assignment and was performed while learning the basics of the Python coding language. 
 
 ## Resources
-Data Source: election_results.csv
-Software:  Python 3.8.5
+Data Source: ![election_results.csv](https://github.com/rkaysen63/Election_Analysis/blob/main/Resources/election_results.csv)<br/>  
+Software:  Python 3.8.5<br/>
 Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3
 
 ## Summary
-The Colorado princinct that was analyzed includes the following counties:
-* Arapahoe
-* Denver
-* Jefferson
+* The Colorado princinct that was analyzed includes the following counties:
+  * Arapahoe
+  * Denver
+  * Jefferson
 
 * The candidates were:
   * Diana DeGette
   * Raymon Anthony Doane
   * Charles Casper Stockham
 
-* The analysis of the election show that of the total votes cast:
+* The analysis of the election shows that of the total votes cast:
   * Diana DeGette received 73.8% of the vote (272,892 votes).
   * Raymon Anthony Doane received 3.1% of the vote (11,606 votes).
   * Charles Casper Stockham received 23.0% of the vote (85,213 votes).
  
 * The winner of the election was:
-  * Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
+  * Diana DeGette, who received 73.8% of the popular vote and 272,892 number of votes.
 
 ## Project Overview PyPoll Challenge
 The Colorado Election Commission has requested assistance with an audit of the tabulated votes for a princinct in Colorado.  They have requested a report of the election results that include, the total number of votes cast, the total number of votes for each candidate, the percentage of votes for each candidate, and winner based on the popular vote. In addition, they have also requested the voter turnout for each county, the percentage of votes from each county out of the total count, and to identify the county with the highest turnout.
 
 ## Challenge Resources
-Data Source: election_results.csv
+Data Source: ![election_results.csv](https://github.com/rkaysen63/Election_Analysis/blob/main/Resources/election_results.csv)
 Software:  Python 3.8.5
 Lesson Plan:  UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 3 Challenge and starter code file PyPoll_Challenge_starter_code.py
 
-## Election-Audit Results:
+## Election Audit Results:
 The Colorado princinct that was analyzed includes the following counties:
 * Arapahoe
 * Denver
@@ -57,13 +61,13 @@ The Colorado princinct that was analyzed includes the following counties:
 
 * Total number of votes cast: 369,711
 
-* The analysis of the election show that of the total votes cast:
+* The analysis of the election shows that of the total votes cast:
   * Diana DeGette received 73.8% of the vote (272,892 votes).
   * Raymon Anthony Doane received 3.1% of the vote (11,606 votes).
   * Charles Casper Stockham received 23.0% of the vote (85,213 votes).
 
 * The winner of the election was:
-  * Diana DeGette, who received 73.8% of the vote (272,892 votes).
+  * Diana DeGette, who received 73.8% of the popular vote (272,892 votes).
 
 * The results show that of the three counties in the precinct, Denver County had the largest turnout with 272,892 voters.
 
@@ -72,11 +76,9 @@ The Colorado princinct that was analyzed includes the following counties:
   * Denver County had 306,055 voters turned out to vote, equating  to 82.8% of the precinct's total number of voters.
   * Jefferson County had 38,855 voters turn out to vote, equating  to 10.5% of the precinct's total number of voters.
 
-The results were written to a text file![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt) and printed in the terminal.
+The results were written to a text file, ![election_results.txt](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/election_results.txt), and printed in the terminal, ![analysis/Election_Results_Terminal.png](https://github.com/rkaysen63/Election_Analysis/blob/main/analysis/analysis/Election_Results_Terminal.png)
 
-![alt text](analysis/Election_Results_Terminal.png)
-
-## Election-Audit Summary:
+## Election Audit Summary:
 
 The results were gathered from the election_data.csv using a program written in Python.  This program may be used to analyze election data from other precincts or districts with very little modification because the code is fairly generic.  The exceptions are the path to retrieve the data and the path to store the output text file.
 
