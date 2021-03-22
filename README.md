@@ -1,6 +1,7 @@
 # An Analysis of the Election Results of a Colorado Precinct
-
-<img src="analysis/Election_Results_Terminal.png" align="center" width="582" height="400" >
+<p
+<img src="analysis/Election_Results_Terminal.png" width="435" height="300">
+</p>
 
 ## Table of Contents
 * [Project Overview PyPoll](https://github.com/rkaysen63/Election_Analysis/blob/master/README.md#project_overview_pypoll)
